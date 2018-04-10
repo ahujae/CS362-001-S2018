@@ -173,7 +173,7 @@ public class Appt{
 			this.valid = false;
 		else if (startMinute < 0 || startMinute > 59)
 			this.valid = false;
-		else if (startYear <= 0)
+		else if (startYear < 0)
 			this.valid = false;
 		else {
 			int NumDaysInMonth = CalendarUtil.NumDaysInMonth(startYear, startMonth - 1);
@@ -291,7 +291,7 @@ public class Appt{
      * @return True if this appointment has a time set. Otherwise false.
      */
     public boolean hasTimeSet() {
-        return (getStartHour() != NO_TIME);
+        return (getStartHour() == NO_TIME);
     } 
     /**
      * Sets the recurring information with the correct information

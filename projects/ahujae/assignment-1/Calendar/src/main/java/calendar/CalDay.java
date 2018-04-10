@@ -59,7 +59,7 @@ public class CalDay {
 		int year = cal.get(cal.YEAR);
 	
 		setDay(day);
-		setMonth(month+1);
+		setMonth(month); //is only month instead of month +1
 		setYear(year);
 	
 		setAppts(new LinkedList<Appt>());
