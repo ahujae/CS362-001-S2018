@@ -291,7 +291,7 @@ public class Appt{
      * @return True if this appointment has a time set. Otherwise false.
      */
     public boolean hasTimeSet() {
-        return (getStartHour() == NO_TIME);
+        return (getStartHour() != NO_TIME);
     } 
     /**
      * Sets the recurring information with the correct information
